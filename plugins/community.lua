@@ -5,8 +5,9 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.pack.typescript" }, 
-  { import = "astrocommunity.pack.lua" }, 
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
@@ -15,6 +16,7 @@ return {
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.debugging.nvim-bqf" },
   {
     "zbirenbaum/copilot.lua",
     opts = {

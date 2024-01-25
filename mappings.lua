@@ -5,7 +5,23 @@
 -- automatically pick-up stored data by this setting.)
 return {
   -- first key is the mode
+  v = {
+    ["<Up>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Down>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Left>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Right>"] = { "<Nop>", desc = "Do nothing" },
+  },
+  i = {
+    ["<Up>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Down>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Left>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Right>"] = { "<Nop>", desc = "Do nothing" },
+  },
   n = {
+    ["<Up>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Down>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Left>"] = { "<Nop>", desc = "Do nothing" },
+    ["<Right>"] = { "<Nop>", desc = "Do nothing" },
     -- second key is the lefthand side of the map
 
     -- navigate buffer tabs with `H` and `L`
@@ -17,7 +33,10 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
-
+    ["]q"] = { ":cnext<cr>", desc = "Next quickfix" },
+    ["[q"] = { ":cprev<cr>", desc = "Previous quickfix" },
+    ["<leader>q"] = { ":copen<cr>", desc = "Open quickfix" },
+    ["<leader>Q"] = { ":cclose<cr>", desc = "Close quickfix" },
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
